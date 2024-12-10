@@ -183,7 +183,7 @@ window.addEventListener('devicemotion', function(event) {
   }
 
   async function sendSubscriptionToServer(subscription) {
-    await fetch('http://192.168.0.100:3000/subscribe', {
+    await fetch('http://192.168.112.119:3000/subscribe', {
       method: 'POST',
       mode: 'cors',
       body: JSON.stringify(subscription),
