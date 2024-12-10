@@ -3,20 +3,20 @@
 const pwaDemo = 'pwa-demo-site';
 
 const assets = [
-    '/',
-    'index.html',
-    'style.css',
-    'js/app.js',
-    'icons/icon-48x48.png',
-    'icons/icon-72x72.png',
-    'icons/icon-96x96.png',
-    'icons/icon-128x128.png',
-    'icons/icon-144x144.png',
-    'icons/icon-152x152.png',
-    'icons/icon-192x192.png',
-    'icons/icon-256x256.png',
-    'icons/icon-384x384.png',
-    'icons/icon-512x512.png',
+    './',
+    './index.html',
+    './style.css',
+    './js/app.js',
+    './icons/icon-48x48.png',
+    './icons/icon-72x72.png',
+    './icons/icon-96x96.png',
+    './icons/icon-128x128.png',
+    './icons/icon-144x144.png',
+    './icons/icon-152x152.png',
+    './icons/icon-192x192.png',
+    './icons/icon-256x256.png',
+    './icons/icon-384x384.png',
+    './icons/icon-512x512.png',
 ];
 
 self.addEventListener('install',(installEvent) => installEvent.waitUntil(
@@ -117,8 +117,8 @@ self.addEventListener('push',(event)=>{
 
     const options = {
         body:data.body,
-        icon:'icons/icon-192x192.png',
-        badge:'icons/icon-192x192.png'
+        icon:'./icons/icon-192x192.png',
+        badge:'./icons/icon-192x192.png'
     };
 
     event.waitUntil(self.registration.showNotification(title, options));
